@@ -1,8 +1,5 @@
-import streamlit as st
 import pandas as pd
-import openpyxl
-import matplotlib.pyplot as plt
-
+import streamlit as st
 
 st.write("""
 # CALCULADORA: TAXA INTERNA DE RETORNO (TIR)
