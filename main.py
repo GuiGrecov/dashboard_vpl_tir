@@ -11,7 +11,7 @@ Vamos gerar um gráfico da taxa interna de retorno (TIR) vs o VPL
 
 # Título do aplicativo
 st.markdown('## UPLOAD ARQUIVO EXCEL')
-st.markdown(f"Dúvidas em como fazer o upload do arquivo? Acesse o link: [{'AQUI'}]({'https://www.youtube.com/'})", unsafe_allow_html=True)
+st.markdown(f"Dúvidas em como fazer o upload do arquivo? Acesse o link: [{'AQUI'}]({'https://docs.google.com/presentation/d/19dOVy95LsEhf09rUs6xxJZTPWT9TdmLWjTBtVEhqlFc/edit?usp=sharing'})", unsafe_allow_html=True)
 
 # Widget de upload de arquivo XLSX
 file = st.file_uploader("", type=["xlsx"])
