@@ -1,5 +1,6 @@
 import pandas as pd
 import streamlit as st
+import openpyxl
 
 st.write("""
 # CALCULADORA: TAXA INTERNA DE RETORNO (TIR)
@@ -18,8 +19,8 @@ file = st.file_uploader("", type=["xlsx"])
 # Verifica se um arquivo foi enviado
 if file is not None:
     # Lê o arquivo XLSX em um DataFrame do Pandas
-    df = pd.read_excel(file, engine='openpyxl')
-
+    df = pd.read_excel(file)
+    wb = openpyxl.load_workbook(file) #starta openxyl
     # Exibe o DataFrame
     st.write("**Fluxo de caixa abaixo:**")
     st.write(df)
